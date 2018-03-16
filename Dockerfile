@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM ubuntu:14.04
 
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
