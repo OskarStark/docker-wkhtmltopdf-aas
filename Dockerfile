@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+MAINTAINER Oskar STARK <oskarstark@googlemail.com>
+
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
                                    apt-get upgrade -y
